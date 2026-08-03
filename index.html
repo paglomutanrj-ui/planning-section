@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DENR PENRO Negros Occidental | Planning Section</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f7fa;
+    color:#333;
+}
+
+html, body{
+    width:100%;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+/* Header */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    padding:20px 60px;
+    background:rgba(11,79,135,.95);
+    backdrop-filter:blur(8px);
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 50px;
+    z-index:999;
+}
+
+header h2{
+    font-size:26px;
+}
+
+header span{
+    color:#9be27b;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#9be27b;
+}
+
+
+.hero{
+    width:100%;
+    min-height:100vh;
+    background-image:url("https://drive.google.com/thumbnail?id=1mLidwfw-oAJv8-mS5MtNhMzxCYOwFL0b&sz=w1920");
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+section{
+    width:100%;
+    padding:70px 5%;
+}
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.55);
+}
+
+.hero-content{
+    position:relative;
+    z-index:1;
+    color:white;
+    text-align:center;
+    top:50%;
+    transform:translateY(-50%);
+    width:90%;
+    margin:auto;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    line-height:1.7;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 35px;
+    background:#2f9d44;
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    transition:.3s;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#237a35;
+    transform:translateY(-4px);
+}
+
+.quick,.organization{
+    width:100%;
+    max-width:1400px;
+    margin:auto;
+}
+
+
+.quick{
+    padding:80px 40px;
+    text-align:center;
+}
+
+.quick h2{
+    color:#0b4f87;
+    font-size:36px;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:330px;
+    background:white;
+    border-radius:15px;
+    padding:35px;
+    text-decoration:none;
+    color:#333;
+    transition:.35s;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,.18);
+
+}
+
+.icon{
+    font-size:65px;
+    margin-bottom:20px;
+
+}
+
+.card h3{
+    color:#0b4f87;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#666;
+    line-height:1.6;
+}
+
+/* Organization */
+
+.organization{
+    background:white;
+    padding:80px 20px;
+    text-align:center;
+}
+
+.organization h2{
+    color:#0b4f87;
+    margin-bottom:35px;
+    font-size:36px;
+}
+
+.organization img{
+    width:100%;
+    max-width:1400px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+    height:auto;
+}
+
+footer{
+    background:#0b4f87;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:10px;
+    padding:15px;
+}
+
+.hero-content h1{
+    font-size:42px;
+}
+
+.hero-content p{
+    font-size:18px;
+} 
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>DENR PENRO <span>Planning Section</span></h2>
+
+<nav>
+<a href="#">Home</a>
+<a href="#quick">Quick Access</a>
+<a href="#organization">Organization</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>PLANNING SECTION</h1>
+<p>
+Department of Environment and Natural Resources<br>
+Provincial Environment and Natural Resources Office<br>
+Negros Occidental
+</p>
+<a href="#quick" class="btn">Explore</a>
+</div>
+</section>
+
+
+<section class="quick" id="quick">
+<h2>Quick Access</h2>
+<div class="cards">
+<a href="StatisticalReports.html" class="card">
+<div class="icon">📊</div>
+<h3>Statistical Reports</h3>
+<p>
+Monthly, Quarterly and Annual Statistical Reports.
+</p>
+</a>
+
+<a href="MOVs.html" class="card">
+<div class="icon">📁</div>
+<h3>PENRO Negros Occidental MOVs</h3>
+<p>
+Means of Verification (MOVs), references and supporting documents.
+</p>
+</a>
+</div>
+</section>
+
+<section class="organization" id="organization">
+<h2>Organizational Structure</h2>
+<img src="https://drive.google.com/thumbnail?id=1d_yH3_qDQsMSbMw21JhBcyPSAHgXZpYZ&sz=w1600"
+     alt="Planning Organization Chart">
+</section>
+
+<footer>
+&copy; 2026 DENR PENRO Negros Occidental | Planning Section
+</footer>
+
+<script>
+console.log("Planning Section Website Loaded");
+</script>
+
+</body>
+</html>
