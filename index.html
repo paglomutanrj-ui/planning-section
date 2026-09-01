@@ -153,10 +153,11 @@ section{
 }
 
 .cards{
-    display:flex;
-    justify-content:center;
+    display:grid;
+	grid-template-columns:repeat(4,1fr);
+    /*justify-content:center;*/
     gap:30px;
-    flex-wrap:wrap;
+    /*flex-wrap:wrap;*/
 }
 
 .card{
@@ -237,6 +238,17 @@ header{
     font-size:18px;
 } 
 }
+/* Responsive: drop to fewer columns on smaller screens */
+@media (max-width:1100px){
+    .cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media (max-width:600px){
+    .cards{
+        grid-template-columns:1fr;
+    }
+}
 
 </style>
 </head>
@@ -244,7 +256,7 @@ header{
 <body>
 
 <header>
-<h2>DENR PENRO <span>Planning Section</span></h2>
+<h2>DENR PENRO <span>Negros Occidental</span></h2>
 
 <nav>
 <a href="#">Home</a>
@@ -286,6 +298,121 @@ Monthly, Quarterly and Annual Statistical Reports.
 Means of Verification (MOVs), references and supporting documents.
 </p>
 </a>
+
+<a href="#" class="card" target="_blank"
+   rel="noopener noreferrer">
+<div class="icon">💰</div>
+<h3>Work and Financial Plan based on WFP</h3>
+<p>
+Work and Financial Plan documents based on the WFP.
+</p>
+</a>
+<a href="#" class="card" target="_blank"
+   rel="noopener noreferrer">
+<div class="icon">📜</div>
+<h3>Tenurial Instruments</h3>
+<p>
+Tenurial instruments and related land documents.
+</p>
+</a>
+<a href="#" class="card" target="_blank"
+   rel="noopener noreferrer">
+<div class="icon">🧾</div>
+<h3>Sub-Allotment Advice</h3>
+<p>
+Sub-Allotment Advice records.
+</p>
+</a>
+<a href="#" class="card" target="_blank"
+   rel="noopener noreferrer">
+<div class="icon">📋</div>
+<h3>Special Orders</h3>
+<p>
+Special Orders issuances.
+</p>
+</a>
+<a href="#" class="card" target="_blank"
+   rel="noopener noreferrer">
+<div class="icon">✅</div>
+<h3>Quality Management System</h3>
+<p>
+Quality Management System documents and records.
+</p>
+</a>
+<a href="#" class="card" target="_blank"
+   rel="noopener noreferrer">
+<div class="icon">🏢</div>
+<h3>Property</h3>
+<p>
+Property records and documentation.
+</p>
+</a>
+<a href="#" class="card" target="_blank"
+   rel="noopener noreferrer">
+<div class="icon">👤</div>
+<h3>Profile</h3>
+<p>
+Office profile documents.
+</p>
+</a>
+<a href="#" class="card" target="_blank"
+   rel="noopener noreferrer">
+<div class="icon">🗂️</div>
+<h3>Plans</h3>
+<p>
+Office plans and planning documents.
+</p>
+</a>
+<a href="#" class="card" target="_blank"
+   rel="noopener noreferrer">
+<div class="icon">⚖️</div>
+<h3>Legal Basis</h3>
+<p>
+Legal basis references and supporting issuances.
+</p>
+</a>
+<a href="#" class="card" target="_blank"
+   rel="noopener noreferrer">
+<div class="icon">🧑‍💼</div>
+<h3>Human Resource File</h3>
+<p>
+Human resource records and files.
+</p>
+</a>
+<a href="#" class="card" target="_blank"
+   rel="noopener noreferrer">
+<div class="icon">📈</div>
+<h3>ENR Statistical Profile</h3>
+<p>
+Environment and Natural Resources statistical profile.
+</p>
+</a>
+<a href="#" class="card" target="_blank"
+   rel="noopener noreferrer">
+<div class="icon">💵</div>
+<h3>Budget Proposal</h3>
+<p>
+Budget proposal documents.
+</p>
+</a>
+<a href="#" class="card" target="_blank"
+   rel="noopener noreferrer">
+<div class="icon">✔️</div>
+<h3>Approved Work and Financial Plan</h3>
+<p>
+Approved Work and Financial Plan documents.
+</p>
+</a>
+<a href="#" class="card" target="_blank"
+   rel="noopener noreferrer">
+<div class="icon">📑</div>
+<h3>Annual Reports</h3>
+<p>
+Annual reports and related documents.
+</p>
+</a>
+
+	
 </div>
 </section>
 
