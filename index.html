@@ -201,6 +201,34 @@ section{
     line-height:1.6;
 }
 
+/* Add this CSS alongside your .quick / .organization rules */
+.calendar{
+    width:100%;
+    max-width:1400px;
+    margin:auto;
+    padding:80px 40px;
+    text-align:center;
+}
+ 
+.calendar h2{
+    color:#0b4f87;
+    font-size:36px;
+    margin-bottom:40px;
+}
+ 
+.calendar-wrap{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+}
+ 
+.calendar-wrap iframe{
+    width:100%;
+    border-radius:10px;
+    display:block;
+}
+ 
 /* Organization */
 
 .organization{
@@ -262,6 +290,11 @@ header{
         grid-template-columns:1fr;
     }
 }
+@media (max-width:600px){
+    .calendar-wrap iframe{
+        height:450px;
+    }
+}
 
 </style>
 </head>
@@ -274,6 +307,7 @@ header{
 <nav>
 <a href="#">Home</a>
 <a href="#quick">Quick Access</a>
+<a href="#calendar">Quick Access</a>
 <a href="#organization">Organization</a>
 </nav>
 </header>
@@ -520,6 +554,15 @@ Photos, documentation, and reports from office events and activities.
 </p>
 </a>
 	
+</div>
+</section>
+
+<!-- Add this section between .quick and .organization -->
+<section class="calendar" id="calendar">
+<h2>Calendar of Activities</h2>
+<div class="calendar-wrap">
+<iframe src="https://calendar.google.com/calendar/u/0/r/month/2026/7/1"
+        style="border:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 </div>
 </section>
 
